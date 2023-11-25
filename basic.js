@@ -61,9 +61,9 @@ function resetBoard(){
 document.querySelector(".board").addEventListener('click', () => {
     click = !click;
     if(click){
-        document.querySelector(".mode").textContent = "Mode: Coloring"
+        document.querySelector(".mode").innerHTML = "<h3>Mode: Coloring</h3>"
     }
     else(
-        document.querySelector(".mode").textContent = "Mode: Not Coloring"
+        document.querySelector(".mode").innerHTML= "<h3>Mode: Not Coloring</h3>"
     )
 })

@@ -9,21 +9,71 @@
 
 
 .buttons{
-    display:flex;
-    flex-direction: row;
+    justify-content: space-evenly;
+    padding:10px 0px 10px;
+}
+
+button {
+    padding: 0.3em 1.2em;
+    margin: 0.5em;
+    text-align: center;
+    font-weight: 700px;
+    margin:0px 10px 0px 10px;
+    border-radius:0.23em;
+}
+
+#buttonblack{
+    background-color: black;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#buttonblue{
+    background-color: aqua;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#buttongrey{
+    background-color: grey;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#buttonrandom{
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#buttonreset{
+    background-color: black;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .content{
     display:flex;
     flex-direction: column;
-    align-items: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    max-width: 600px;
+    max-height: 600px;
+    min-width: 300px;
+    min-height: 300px;
+    gap: 10px
 }
 
 .board{
-    width: 500px;
-    height: 500px;
+    width: 90%;
+    height: 90%;
     border: 2px solid black;
     display: grid;
+}
+
+.board:hover{
+    cursor:pointer;
 }
 
 .title{
