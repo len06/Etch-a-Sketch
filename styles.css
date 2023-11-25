@@ -1,0 +1,18 @@
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.board{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    display: grid;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
