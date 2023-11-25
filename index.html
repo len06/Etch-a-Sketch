@@ -10,6 +10,7 @@
     <body>
         <div class="flex-container">
             <div class="title"><h1>Etch-a-Sketch</h1></div>
+            <div class="mode"><h3>Mode: Coloring</h3></div>
             <div class="content">
                 
                 <div class="board"></div>
@@ -19,7 +20,7 @@
                     <button onclick = "changeColor('blue')">Blue</button>
                     <button onclick = "changeColor('white')">Eraser</button>
                     <button onclick = "changeColor('random')">Random</button>
-                    <button>Reset</button>
+                    <button onclick = "resetBoard()">Reset</button>
                 </div>
                 
                 <div class="size">

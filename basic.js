@@ -1,4 +1,5 @@
 let color = 'black';
+let click = true;
 
 function populateBoard(size){
     let board = document.querySelector('.board');
@@ -32,12 +33,16 @@ function changeSize(input){
 
 //function that colors all the squares.
 function colorSquares(){
-    if(color === 'random'){
-        this.style.backgroundColor  = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }
-    else
+    if(click)
     {
-        this.style.backgroundColor = color;
+        if(color === 'random')
+        {
+            this.style.backgroundColor  = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        }
+        else
+        {
+            this.style.backgroundColor = color;
+        }
     }
 }
 
@@ -45,3 +50,20 @@ function colorSquares(){
 function changeColor(changedColor){
     color = changedColor;
 }
+
+//function that resets the sketch board
+function resetBoard(){
+    let board = document.querySelector(".board");
+    let squares = board.querySelectorAll('div');
+    squares.forEach((div) => div.style.backgroundColor = 'white');
+}
+
+document.querySelector(".board").addEventListener('click', () => {
+    click = !click;
+    if(click){
+        document.querySelector(".mode").textContent = "Mode: Coloring"
+    }
+    else(
+        document.querySelector(".mode").textContent = "Mode: Not Coloring"
+    )
+})

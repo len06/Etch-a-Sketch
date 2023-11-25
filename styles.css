@@ -1,7 +1,22 @@
 .flex-container{
+    height: 100vh;
+    width: 100vw;
     display:flex;
     flex-direction: column;
-    align-items: center; 
+    align-items:center;
+    background: linear-gradient(rgba(96,79,252,0.082), white);
+}
+
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items: space-between;
 }
 
 .board{
@@ -15,4 +30,5 @@
     font-weight: bold;
     font-size: 20px;
 }
+
 
